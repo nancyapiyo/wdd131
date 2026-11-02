@@ -4,46 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131: Dynamic web fundamentals - Home Page</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – NANCY APIYO</title>
     <meta name="description"
-        content="Course landing page for WDD 131 containing student profile, course information, and dynamic footer updates.">
-    <meta name="author" content="NANCY APIYOY">
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+        content="WDD 131 – Dynamic Web Fundamentals course landing page by Your Name. A showcase of dynamic web development fundamentals, HTML, CSS Grid, and JavaScript.">
+    <meta name="author" content="NANCY APIYO">
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Defer loads JS after parsing HTML but before DOMContentLoaded -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
+
     <header>
-        <h1>WDD 131: Dynamic Web Foundamental </h1>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
         <nav>
-            <ul>
-                </nav>
-                </header>
-                
-                <main>
-                    <section class="card profile-card">
-                        <h2>About Me</h2>
-                        <p>Hello! My name is <strong>[NANCY APIYO]</strong>. I am currently studying to
-                            build responsive, user-friendly, and accessible websites.</p>
-                        <p><strong>Africa:</strong> Gulu, Uganda</p>
-                 </section>
-                
-                    <section class="card course-card">
-                        <h2>Course Activities</h2>
-                        <ul>
-                            <li>Lesson 01: Introduction & Environment</li>
-                            <li>Lesson 02: HTML5 Semantic Elements</li>
-                            <li>Lesson 03: CSS Layouts & Flexbox</li>
-                            <li>Lesson 04: Responsive Design</li>
-                            <li>Lesson 05: JavaScript DOM Basics</li>
-                        </ul>
-                    </section>
-                </main>
-                
-                <footer>
-                    <p>&copy; <span id="currentyear"></span> | Your Name Here | Location</p>
-                    <p id="lastModified"></p>
-                </footer>
-                </body>
-                
-                </html>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>NANCY APIYO</h1>
+
+        <div class="grid-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="images/profile.webp" alt="Your Name profile picture" width="200" height="200" loading="lazy">
+                <p>Hello! I am a web development student learning to create clean, responsive, and dynamic user
+                    interfaces using modern web standards.</p>
+            </section>
+
+            <section class="card">
+                <h2>Course Information</h2>
+                <img src="images/certificate.webp" alt="Web fundamentals illustration" width="200" height="200"
+                    loading="lazy">
+                <p>This course covers HTML5 structural semantics, advanced CSS positioning, Flexbox, CSS Grid layouts,
+                    and core client-side JavaScript execution.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Nancy Apiyo | Gulu, Uganda</p>
+        <script>
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+        </script>
+        <p id="lastModified"></p>
+    </footer>
+<script>
+  document.getElementById("lastModified").textContent = "Last updated: " + document.lastModified;
+</script>
+</body>
+
+</html>
