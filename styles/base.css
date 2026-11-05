@@ -1,133 +1,193 @@
-body {
-    max-width: 840px;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    line: heigh 1.3em;;
-    background - color: #f4f4f9;
-    color: #333;
+* {
+    box-sizing: border-box;
 }
 
-header {
+body {
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.site-header {
     background-color: #090641;
     color: #fff;
-    text-align:center;
-    padding: 20px;
+    text-align: center;
 }
 
-header h1 {
+.site-header h1 {
     margin: 0;
+    padding: 1rem;
+    font-size: clamp(1.25rem, 3vw, 2rem);
 }
 
 nav ul {
     display: flex;
-    list-style-type: none;
-    padding: 10px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    gap: 1rem;
     margin: 0;
+    padding: 0.25rem 1rem;
     background-color: #333;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
     list-style: none;
-    padding: 1rem;
 }
 
-nav ul li a:hover {
+nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
     text-decoration: overline;
 }
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    gap: 1rem;
+    width: min(100% - 2rem, 1200px);
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+}
+
+.page-title {
+    grid-column: 1 / -1;
+    margin: 0.5rem 0 0;
+    text-align: center;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
 }
 
 .card {
-    background-color: #f4f4f4;
-    padding: 0px;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
+    border: 1px solid #b8b8b8;
+    border-radius: 0.75rem;
+    background-color: #f4f4f4;
 }
 
-.card header {
+.card > header {
+    padding: 0.65rem 1rem;
     background-color: #090641;
-    /* Change the color as per your preference */
     color: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
 .card h4 {
-    text-align: center;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding-top: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-
+    margin: 0;
 }
+
+.card > div:first-of-type {
+    padding: 1rem 1.25rem 0;
+}
+
 .card p {
-    margin-left: 10px;
+    margin: 0 0 1rem;
     text-align: justify;
 }
 
 .profile {
-    width: 150px;
+    float: right;
+    width: min(30%, 150px);
     height: auto;
+    margin: 0 0 1rem 1rem;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-    margin: 0 0 1rem 1rem;
-    margin-right: 10px;
+    box-shadow: 0 0 12px #999;
 }
 
-.flag {
-    width: 150px;
-    height: 110px;
-    border: 1px solid green;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: left;
-    margin: 0 0 1rem 1rem;
-    margin-right: 10px;
+.subsection {
+    display: grid;
+    grid-template-columns: minmax(120px, 0.7fr) minmax(0, 1.3fr);
+    gap: 1rem;
+    clear: both;
+    padding: 0 1.25rem 1rem;
 }
 
 .subsection h3 {
-    position: relative;
+    grid-column: 1 / -1;
+    margin: 0;
+    border-bottom: 1px solid #b8b8b8;
     text-align: center;
+}
+
+.subsection p {
+    margin: 0;
+}
+
+.flag {
+    width: 100%;
+    height: auto;
+    border: 1px solid #b8b8b8;
+    padding: 2px;
 }
 
 .subsection2 {
-    margin-top: 100px;
+    display: flex;
+    flex: 1;
+    min-height: 18rem;
+    align-items: center;
+    padding: 1.5rem;
 }
 
-footer {
-    background-color: #090641;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.subsection2 ul {
+    margin: 0;
+    padding-left: 1.5rem;
 }
 
 .subsection2 ul li a {
-    text-decoration: none;
     color: steelblue;
-    list-style: none;
-    padding: 1rem;
 }
 
 .subsection2 ul li a:hover {
     text-decoration: underline;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #090641;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.25rem;
+}
+
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+        width: min(100% - 1.5rem, 600px);
+    }
+
+    .page-title {
+        grid-column: 1;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    nav a {
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .subsection {
+        grid-template-columns: 1fr;
+    }
+
+    .subsection h3 {
+        grid-column: 1;
+    }
+
+    .flag {
+        max-width: 180px;
+    }
 }
