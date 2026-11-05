@@ -1,114 +1,133 @@
-/* --- Global Styling & Typography --- */
-:root {
-    --primary-color: #003366;
-    --secondary-color: #f4f4f4;
-    --accent-color: #ffcc00;
-    --text-color: #333333;
-    --card-bg: #ffffff;
-}
-
 body {
+    max-width: 840px;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    line-height: 1.6;
+    line: heigh 1.3em;;
+    background - color: #f4f4f9;
+    color: #333;
 }
 
-/* --- Header & Layout Requirements --- */
 header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1.5rem 0;
-    text-align: center;
+    background-color: #090641;
+    color: #fff;
+    text-align:center;
+    padding: 20px;
 }
 
-#course-title {
-    display: block;
-    /* Centering requirement */
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+header h1 {
+    margin: 0;
 }
 
-/* Flexbox Navigation */
-nav {
+nav ul {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    background-color: #002244;
-    padding: 0.8rem;
+    list-style-type: none;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background-color: #333;
 }
 
-nav a {
-    color: white;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
     text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 4px;
+    color: #fff;
+    list-style: none;
+    padding: 1rem;
 }
 
-/* Clean Hover Effect */
-nav a:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+nav ul li a:hover {
+    text-decoration: overline;
 }
 
-/* --- Main Layout: Centered & Limited Width --- */
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-h1 {
-    text-align: center;
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-}
-
-/* CSS Grid Layout for Cards */
-.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Card Presentation */
 .card {
-    background-color: var(--card-bg);
-    border: 1px solid #ddd;
-    border-top: 5px solid var(--primary-color);
-    border-radius: 8px;
-    padding: 1.5rem;
+    background-color: #f4f4f4;
+    padding: 0px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card header {
+    background-color: #090641;
+    /* Change the color as per your preference */
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+
+}
+.card p {
+    margin-left: 10px;
+    text-align: justify;
 }
 
-.card h2 {
-    margin-top: 0;
-    color: var(--primary-color);
-}
-
-.card img {
-    max-width: 100%;
+.profile {
+    width: 150px;
     height: auto;
-    border-radius: 4px;
-    margin: 1rem 0;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+    margin-right: 10px;
 }
 
-/* --- Footer --- */
-footer {
-    background-color: var(--primary-color);
-    color: white;
+.flag {
+    width: 150px;
+    height: 110px;
+    border: 1px solid green;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: left;
+    margin: 0 0 1rem 1rem;
+    margin-right: 10px;
+}
+
+.subsection h3 {
+    position: relative;
     text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 3rem;
-    font-size: 0.9rem;
 }
 
-footer p {
-    margin: 0.4rem 0;
+.subsection2 {
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #090641;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.subsection2 ul li a {
+    text-decoration: none;
+    color: steelblue;
+    list-style: none;
+    padding: 1rem;
+}
+
+.subsection2 ul li a:hover {
+    text-decoration: underline;
 }
