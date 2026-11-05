@@ -70,15 +70,13 @@ main {
     background-color: #f4f4f4;
 }
 
-.card > header {
+.card-title {
+    margin: 0;
     padding: 0.65rem 1rem;
     background-color: #090641;
     color: #fff;
+    font-size: 1.2rem;
     text-align: center;
-}
-
-.card h4 {
-    margin: 0;
 }
 
 .card > div:first-of-type {
@@ -108,7 +106,7 @@ main {
     padding: 0 1.25rem 1rem;
 }
 
-.subsection h3 {
+.subsection h4 {
     grid-column: 1 / -1;
     margin: 0;
     border-bottom: 1px solid #b8b8b8;
@@ -183,7 +181,7 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    .subsection h3 {
+    .subsection h4 {
         grid-column: 1;
     }
 
