@@ -15,6 +15,7 @@ body {
 .site-header {
     display: flex;
     min-height: 5rem;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 0.75rem 1.25rem;
@@ -60,14 +61,19 @@ body {
 }
 
 .primary-navigation {
-    display: none;
+    display: flex;
     flex-basis: 100%;
     flex-direction: column;
     align-items: stretch;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 180ms ease, visibility 180ms ease;
 }
 
 .primary-navigation.is-open {
-    display: flex;
+    max-height: 20rem;
+    visibility: visible;
 }
 
 .primary-navigation a {
@@ -84,10 +90,6 @@ body {
     background-color: #512078;
     text-decoration: underline;
     text-underline-offset: 0.3rem;
-}
-
-.site-header {
-    flex-wrap: wrap;
 }
 
 main {

@@ -15,11 +15,13 @@
 
     .primary-navigation,
     .primary-navigation.is-open {
-        display: flex;
         flex-basis: auto;
         flex-direction: row;
         align-items: center;
         gap: 0.5rem;
+        max-height: none;
+        overflow: visible;
+        visibility: visible;
     }
 
     .primary-navigation a {
