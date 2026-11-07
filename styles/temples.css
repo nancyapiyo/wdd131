@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: #171717;
+    font-family: 'Roboto', sans-serif;
+}
+
+.site-header {
+    display: flex;
+    min-height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem;
+    background-color: #3b0a63;
+    color: #fff;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: clamp(1.7rem, 5vw, 2rem);
+}
+
+.menu-toggle {
+    display: flex;
+    width: 2.75rem;
+    height: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.35rem;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #fff;
+    transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.menu-toggle.is-open span:first-child {
+    transform: translateY(0.55rem) rotate(45deg);
+}
+
+.menu-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.is-open span:last-child {
+    transform: translateY(-0.55rem) rotate(-45deg);
+}
+
+.primary-navigation {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.primary-navigation.is-open {
+    display: flex;
+}
+
+.primary-navigation a {
+    padding: 0.75rem 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.primary-navigation a:hover,
+.primary-navigation a:focus-visible,
+.primary-navigation a[aria-current="page"] {
+    background-color: #512078;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
+.site-header {
+    flex-wrap: wrap;
+}
+
+main {
+    width: min(100% - 2rem, 70rem);
+    flex: 1;
+    margin: 0 auto;
+    padding: 1.5rem 0 2.5rem;
+}
+
+main h2 {
+    margin: 0 0 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+}
+
+.temple-card {
+    margin: 0;
+    text-align: center;
+}
+
+.temple-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.65;
+    border: 1px solid #d5d5d5;
+    object-fit: cover;
+}
+
+.temple-card figcaption {
+    padding-top: 0.25rem;
+    color: #3b0a63;
+    font-size: 1.05rem;
+}
+
+.site-footer {
+    padding: 0.7rem 1rem;
+    background-color: #3b0a63;
+    color: #fff;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0.15rem;
+}
+
+.site-footer p + p {
+    font-size: 0.85rem;
+}
+
+@media (max-width: 40rem) {
+    .site-header {
+        border-top: 0.35rem solid #333;
+    }
+}
