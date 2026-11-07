@@ -60,7 +60,7 @@ body {
     transform: translateY(-0.55rem) rotate(-45deg);
 }
 
-.primary-navigation {
+nav {
     display: flex;
     flex-basis: 100%;
     flex-direction: column;
