@@ -1,0 +1,43 @@
+@media (min-width: 48rem) {
+    .site-header {
+        min-height: 5rem;
+        flex-wrap: nowrap;
+        padding: 0.75rem 2rem;
+    }
+
+    .site-header h1 {
+        font-size: 1.9rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .primary-navigation,
+    .primary-navigation.is-open {
+        display: flex;
+        flex-basis: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .primary-navigation a {
+        padding: 0.65rem 0.8rem;
+        font-size: 1rem;
+    }
+
+    main {
+        padding-top: 1.75rem;
+    }
+
+    main h2 {
+        margin-bottom: 1.25rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 1.25rem;
+        row-gap: 1.5rem;
+    }
+}
