@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    background-color: #fff;
     color: #171717;
     font-family: 'Roboto', sans-serif;
 }
@@ -127,7 +128,7 @@ main h2 {
 
 .temple-card figcaption {
     padding-top: 0.25rem;
-    color: #3b0a63;
+    color: #2b0847;
     font-size: 1.05rem;
 }
 
