@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #D90000;
+    /* Flag Red */
+    --secondary-color: #FCDC04;
+    /* Flag Yellow */
+    --dark-color: #111111;
+    /* Flag Black */
+    --light-bg: #FFFFFF;
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--dark-color);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 8px solid var(--secondary-color);
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 6px solid var(--dark-color);
+}
+
+.card {
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.weather-icon-mobile {
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 0.75rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.info-grid dt {
+    font-weight: 600;
+    text-align: right;
+}
+
+.info-grid dd {
+    text-align: left;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-bg);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 6px solid var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
