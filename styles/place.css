@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #D90000;
+    --primary-color: rgb(217, 0, 0);
     /* Red from Ugandan flag */
-    --secondary-color: #FCDC04;
+    --secondary-color: rgb(252, 220, 4);
     /* Yellow from Ugandan flag */
-    --dark-color: #111111;
+    --dark-color: rgb(17, 17, 17);
     /* Black from Ugandan flag */
     --light-bg: rgba(255, 255, 255, 0.9);
     --heading-font: 'Montserrat', sans-serif;
@@ -19,13 +19,13 @@
 body {
     font-family: var(--body-font);
     color: var(--dark-color);
-    background-color: #f4f4f4;
+    background-color: rgb(244, 244, 244);
     line-height: 1.5;
 }
 
 header {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 1.5rem 1rem;
     border-bottom: 8px solid var(--secondary-color);
@@ -44,9 +44,9 @@ header h1 {
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     padding: 1.5rem;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid rgb(221, 221, 221);
     text-align: center;
 }
 
@@ -80,7 +80,7 @@ dd {
 
 footer {
     background-color: var(--dark-color);
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 1.5rem 1rem;
     font-size: 0.9rem;
@@ -114,7 +114,7 @@ footer p:last-child {
 
     .card h2 {
         background-color: var(--primary-color);
-        color: #ffffff;
+        color: rgb(255, 255, 255);
         text-align: left;
         padding: 0.5rem 1rem;
         margin-left: -1.75rem;
