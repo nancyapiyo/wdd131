@@ -4,52 +4,45 @@ main {
 
 .hero img {
     border-bottom: none;
-    max-height: 80vh;
+    max-height: 750px;
     object-fit: cover;
 }
 
 .card {
     position: absolute;
-    background-color: var(--card-bg);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    background-color: var(--light-bg);
     border: none;
-    padding: 0 0 1.25rem 0;
-    min-width: 280px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    width: 320px;
+    padding: 1.5rem 1rem;
 }
 
 .card h2 {
-    background-color: var(--dark-accent);
-    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: #ffffff;
     text-align: left;
-    padding: 0.75rem 1.25rem;
-    margin: 1rem 1rem 1rem -0.75rem;
-    /* Offset ribbon style matching wireframe */
+    padding: 0.5rem 1rem;
+    margin-left: -1.75rem;
+    margin-right: 1rem;
 }
 
-/* Position Data Card Top-Left */
 .data {
     top: 2rem;
     left: 2rem;
 }
 
-/* Position Weather Card Bottom-Right */
 .weather {
     bottom: 2rem;
     right: 2rem;
 }
 
-/* Hide mobile SVG in large view */
-.weather-icon-mobile {
+/* Hide mobile SVG on large screens */
+.weather-svg {
     display: none;
 }
 
-/* Pseudo-element for Weather Icon in Large View */
+/* Add emoticon via pseudo-element on large screens */
 .weather h2::after {
     content: " ⛅";
-    font-size: 1.5rem;
-    margin-left: 0.5rem;
-}
-
-dl {
-    padding: 0 1.25rem;
 }

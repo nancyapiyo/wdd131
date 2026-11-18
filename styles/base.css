@@ -79,7 +79,11 @@ main {
     text-align: center;
 }
 
+<<<<<<< HEAD
+.card>div:first-of-type {
+=======
 .card > div:first-of-type {
+>>>>>>> e12dd6fc634c9274af96d5ebe03ddde7c162bed5
     padding: 1rem 1.25rem 0;
 }
 
@@ -138,7 +142,11 @@ main {
 }
 
 .subsection2 ul li a {
+<<<<<<< HEAD
     color: steelblue;
+=======
+    color: #2f5d7c;
+>>>>>>> e12dd6fc634c9274af96d5ebe03ddde7c162bed5
 }
 
 .subsection2 ul li a:hover {
@@ -186,6 +194,12 @@ footer p {
     }
 
     .flag {
+<<<<<<< HEAD
+        max-width: 160px;
+    }
+}
+=======
         max-width: 180px;
     }
 }
+>>>>>>> e12dd6fc634c9274af96d5ebe03ddde7c162bed5

@@ -1,15 +1,13 @@
 :root {
-    --primary-color: #d90000;
-    /* Flag Red */
-    --secondary-color: #034506;
-    /* Flag green */
-    --dark-accent: #021603;
-    /* Flag Black */
-    --text-dark:ffff;
-    --text-light:#ffff;
-    --card-bg: rgba(255, 255, 255, 0.92);
-    --font-heading: 'Montserrat', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
+    --primary-color: #D90000;
+    /* Red from Ugandan flag */
+    --secondary-color: #FCDC04;
+    /* Yellow from Ugandan flag */
+    --dark-color: #111111;
+    /* Black from Ugandan flag */
+    --light-bg: rgba(255, 255, 255, 0.9);
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
 }
 
 * {
@@ -19,66 +17,60 @@
 }
 
 body {
-    font-family: var(--font-body);
-    color: var(--text-dark);
+    font-family: var(--body-font);
+    color: var(--dark-color);
     background-color: #f4f4f4;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
-/* Header */
 header {
     background-color: var(--primary-color);
-    color: var(--text-light);
+    color: #ffffff;
     text-align: center;
-    padding: 1.25rem;
+    padding: 1.5rem 1rem;
     border-bottom: 8px solid var(--secondary-color);
 }
 
 header h1 {
-    font-family: var(--font-heading);
-    font-size: 2.2rem;
-    letter-spacing: 1px;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
 }
 
-/* Hero Image */
 .hero img {
     width: 100%;
     height: auto;
     display: block;
-    border-bottom: 6px solid var(--dark-accent);
+    border-bottom: 6px solid var(--dark-color);
 }
 
-/* Cards (Mobile Stacked Layout) */
 .card {
-    background-color: var(--text-light);
+    background-color: #ffffff;
     padding: 1.5rem;
     border-bottom: 1px solid #dddddd;
     text-align: center;
 }
 
 .card h2 {
-    font-family: var(--font-heading);
-    font-size: 1.6rem;
+    font-family: var(--heading-font);
     margin-bottom: 1rem;
-    color: var(--text-dark);
+    font-size: 1.75rem;
 }
 
-.weather-icon-mobile {
+.weather-svg {
     display: block;
     margin: 0 auto 1rem auto;
 }
 
-/* Definition List Alignment */
 dl {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.4rem 0.75rem;
-    max-width: 400px;
+    gap: 0.5rem;
+    max-width: 350px;
     margin: 0 auto;
 }
 
 dt {
-    font-weight: 600;
+    font-weight: 700;
     text-align: right;
 }
 
@@ -86,16 +78,15 @@ dd {
     text-align: left;
 }
 
-/* Footer */
 footer {
-    background-color: var(--primary-color);
-    color: var(--text-light);
+    background-color: var(--dark-color);
+    color: #ffffff;
     text-align: center;
-    padding: 1.25rem;
-    border-top: 6px solid var(--primary-color);
+    padding: 1.5rem 1rem;
     font-size: 0.9rem;
 }
 
-footer p {
-    margin: 0.25rem 0;
+footer p:last-child {
+    color: var(--secondary-color);
+    margin-top: 0.25rem;
 }
