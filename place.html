@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda - Country Information</title>
+    <meta name="description" content="Explore key facts, geography, and current weather conditions for Uganda.">
+    <meta name="author" content="Your Name">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+
+    <!-- JavaScript with defer -->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Uganda</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <img src="images/hero-large.webp" media="(min-width: 768px)">
+                <img src="images/hero-small.webp" alt width="aut" height="1600">
+            </picture>
+        </div>
+
+        <section class="card data">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>241,038 sq km</dd>
+
+                <dt>Population:</dt>
+                <dd>48,582,334</dd>
+
+                <dt>Capital:</dt>
+                <dd>Kampala</dd>
+
+                <dt>Languages:</dt>
+                <dd>English, Swahili, Luganda</dd>
+
+                <dt>Currency:</dt>
+                <dd>Ugandan Shilling (UGX)</dd>
+
+                <dt>Time Zone:</dt>
+                <dd>UTC+3 (EAT)</dd>
+
+                <dt>Calling Code:</dt>
+                <dd>+256</dd>
+
+                <dt>Internet TLD:</dt>
+                <dd>.ug</dd>
+            </dl>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+            <!-- SVG visible only on mobile -->
+            <img src="images/weather.svg.svg" alt="Partly Cloudy Icon" class="weather-svg" width="80" height="80">
+            <dl>
+                <dt>Temperature:</dt>
+                <dd><span id="temp">24</span> °C</dd>
+
+                <dt>Conditions:</dt>
+                <dd>Partly Cloudy</dd>
+
+                <dt>Wind:</dt>
+                <dd><span id="wind">10</span> km/h</dd>
+
+                <dt>Wind Chill:</dt>
+                <dd><span id="windchill"></span></dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌴 NANCY APIYO 🌴 Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
