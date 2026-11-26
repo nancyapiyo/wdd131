@@ -60,7 +60,7 @@ const temples = [
         location: "St. George, Utah, United States",
         dedicated: "1877, April, 6",
         area: 143969,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/200x320/st-george-utah-temple-1121435-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-utah-temple-1121435-wallpaper.jpg"
     },
     {
         templeName: "San Diego California",
@@ -74,7 +74,7 @@ const temples = [
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".primary-navigation");
 const grid = document.querySelector(".temple-grid");
-const heading = document.querySelector("main h2");
+const heading = document.querySelector("main h1");
 
 const filters = {
     home: () => true,
